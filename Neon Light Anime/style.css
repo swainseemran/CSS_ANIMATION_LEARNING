@@ -1,0 +1,106 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 400px;
+    box-shadow: 2px 2px 10px rgb(161, 172, 41),  -2px -2px 10px rgb(161, 172, 41);
+}
+
+@keyframes trans {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+} */
+
+/* Neon Light Text Animation */
+/* .text{
+    color: aqua;
+    font-size: 65px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 4px 4px 10px rgb(153, 63, 209), -4px -4px 10px rgb(153, 63, 209);
+    animation: trans 1s ease-in-out 0.8s infinite reverse;
+    /* animation: trans 1s ease-in-out 0.8s infinite alternate-reverse; 
+} */
+
+
+/* Text Animation */
+/* .Hey{
+    color: yellow;
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 3px 3px 5px rgb(207, 62, 178), -3px -3px 5px rgb(207, 62, 178);
+    animation: trans 1s ease-in-out 2s infinite alternate-reverse;
+}
+.Beauty{
+    color: goldenrod;
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 3px 3px 5px rgb(148, 52, 52), -3px -3px 5px rgb(148, 52, 52);
+    animation: trans 1s ease-in-out 2s infinite alternate;
+} */
+
+
+/* Neon Text Animation */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #000;
+}
+
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    height: 400px;
+    border: 10px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px greenyellow, 0 0 30px greenyellow, inset 0 0 30px greenyellow, 0 0  30px greenyellow;
+    /* transform: skewX(-10deg); */
+    animation: animate 2s linear infinite;
+}
+
+h1{
+    color: white;
+    font-size: 70px;
+    text-shadow: 0 0 10px greenyellow,0 0 10px greenyellow,0 0 80px greenyellow,0 0 120px greenyellow;
+    animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

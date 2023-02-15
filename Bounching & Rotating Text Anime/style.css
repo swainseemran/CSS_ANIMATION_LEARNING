@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    box-shadow: 2px 2px 5px rgb(69, 255, 255), -2px -2px 5px rgb(69, 255, 255);
+    position: relative;
+}
+
+/* Text Bounce */
+/* span{
+    font-size: 50px;
+    color: black;
+    text-shadow: 2px 2px 7px aqua, -2px -2px 7px aqua;
+    animation: bounceWords 1s infinite;
+    animation-delay: calc(0.08s * var(--i));
+}
+@keyframes bounceWords {
+    0%, 40%, 100%{
+        transform: translateY(0);
+    }
+    20%{
+        transform: translateY(-20px);
+    }
+}*/
+
+/* Text Rotation */
+span{
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 5px greenyellow;
+    font-size: 50px;
+    letter-spacing: 10px;
+    --webkit-box-reflact: below -20px linear-gradient
+    (transparent, rgba(255, 255, 255, 0.42));
+    animation: trans 1.5s infinite /* alternate-reverse */;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes trans {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
